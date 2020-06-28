@@ -1,15 +1,17 @@
 # Week01：使用Python库获取豆瓣影评
 
+[toc]
+
 ## 0. pip安装提速技巧
 
-### 0.1 **常用 pip 源地址**
+### 0.1 常用 pip 源地址
 
 - 豆瓣： https://pypi.doubanio.com/simple/
 - 清华： https://mirrors.tuna.tsinghua.edu.cn/help/pypi/
 - 中科大： https://pypi.mirrors.ustc.edu.cn/simple/
 - 阿里云： https://mirrors.aliyun.com/pypi/simple/
 
-### 0.2 **修改方式**
+### 0.2 修改方式
 
 - **临时替换**
 
@@ -67,7 +69,7 @@ HTTP协议处于应用层。
 - **get**
 - **post**
 
-## 2.3 XPath
+### 2.3 XPath
 
 **XPath 中文文档：**https://www.w3school.com.cn/xpath/index.asp
 **XPath 英文文档：**https://www.w3.org/TR/2017/REC-xpath-31-20170321/#nt-bnf
@@ -102,7 +104,7 @@ html页面是一棵dom树。以下介绍常见的符号含义：
 
 **Scrapy 架构官方文档介绍：**https://docs.scrapy.org/en/latest/topics/architecture.html
 
-![image-scrapy官方图](/Users/fqj/Nutstore/myNutstore/00Writing/Typro/typro-pic/scrapy官方图.png)
+![image-scrapy官方图](https://github.com/QingjingFei/Python001-class01/blob/master/week01/pics/scrapy官方图.png)
 
 *注：一个Scrapy Engine可以对应多个Spiders。*
 
