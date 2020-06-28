@@ -27,15 +27,15 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ## 1. Python基础语法的介绍
 
-**Python 简介：**https://docs.python.org/zh-cn/3.7/tutorial/introduction.html
+**Python 简介：** https://docs.python.org/zh-cn/3.7/tutorial/introduction.html
 
-**Python 数据结构：**https://docs.python.org/zh-cn/3.7/tutorial/datastructures.html
+**Python 数据结构：** https://docs.python.org/zh-cn/3.7/tutorial/datastructures.html
 
-**Python 其他流程控制工具：**https://docs.python.org/zh-cn/3.7/tutorial/controlflow.html
+**Python 其他流程控制工具：** https://docs.python.org/zh-cn/3.7/tutorial/controlflow.html
 
-**Python 中的类：**https://docs.python.org/zh-cn/3.7/tutorial/classes.html
+**Python 中的类：** https://docs.python.org/zh-cn/3.7/tutorial/classes.html
 
-**Python 定义函数：**https://docs.python.org/zh-cn/3.7/tutorial/controlflow.html#defining-functions
+**Python 定义函数：** https://docs.python.org/zh-cn/3.7/tutorial/controlflow.html#defining-functions
 
 ## 2. 前端基础知识
 
@@ -71,10 +71,10 @@ HTTP协议处于应用层。
 
 ### 2.3 XPath
 
-**XPath 中文文档：**https://www.w3school.com.cn/xpath/index.asp
-**XPath 英文文档：**https://www.w3.org/TR/2017/REC-xpath-31-20170321/#nt-bnf
+**XPath 中文文档：** https://www.w3school.com.cn/xpath/index.asp
+**XPath 英文文档：** https://www.w3.org/TR/2017/REC-xpath-31-20170321/#nt-bnf
 
-**Scrapy Xpath 官方学习文档：**https://docs.scrapy.org/en/latest/topics/selectors.html#working-with-xpaths
+**Scrapy Xpath 官方学习文档：** https://docs.scrapy.org/en/latest/topics/selectors.html#working-with-xpaths
 
 Python使用XPath解析可以安装lxml库。Scrapy框架直接支持XPath解析。
 
@@ -102,7 +102,7 @@ html页面是一棵dom树。以下介绍常见的符号含义：
 
 ### 3.1 Scrapy框架结构解析
 
-**Scrapy 架构官方文档介绍：**https://docs.scrapy.org/en/latest/topics/architecture.html
+**Scrapy 架构官方文档介绍：** https://docs.scrapy.org/en/latest/topics/architecture.html
 
 ![image-scrapy官方图](https://github.com/QingjingFei/Python001-class01/blob/master/week01/pics/scrapy官方图.png)
 
