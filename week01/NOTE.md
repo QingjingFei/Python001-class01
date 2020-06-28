@@ -66,8 +66,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 其中**user-agent**和**cookies**是写爬虫程序时需要重点构造的，用来模拟浏览器行为。
 
-- **user-agent: ** 客户端浏览器的基本信息。
-- **cookies: ** 有些网站需要登录后才可以访问。Cookie就是服务端验证了用户名和密码后返回给客户端的一些信息。客户端下一次去请求时需要携带这些信息（Cookie，通常是加密过的）才可成功访问。
+- **user-agent**: 客户端浏览器的基本信息。
+- **cookies**: 有些网站需要登录后才可以访问。Cookie就是服务端验证了用户名和密码后返回给客户端的一些信息。客户端下一次去请求时需要携带这些信息（Cookie，通常是加密过的）才可成功访问。
 
 **网络协议体系模型**
 
