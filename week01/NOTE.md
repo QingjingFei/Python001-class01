@@ -72,6 +72,7 @@ HTTP协议处于应用层。
 ### 2.3 XPath
 
 **XPath 中文文档：** https://www.w3school.com.cn/xpath/index.asp
+
 **XPath 英文文档：** https://www.w3.org/TR/2017/REC-xpath-31-20170321/#nt-bnf
 
 **Scrapy Xpath 官方学习文档：** https://docs.scrapy.org/en/latest/topics/selectors.html#working-with-xpaths
@@ -86,7 +87,7 @@ html页面是一棵dom树。以下介绍常见的符号含义：
 - .. ------------ 从当前结点兄弟处寻找
 - [] ------------ 过滤条件
 - @ ------------ 属性
-- text() ------- 文本
+- text() -------- 文本
 
 举2个例子：
 
