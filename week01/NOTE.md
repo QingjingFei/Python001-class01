@@ -19,10 +19,10 @@
 
 ### 0.1 常用 pip 源地址
 
-- 豆瓣： https://pypi.doubanio.com/simple/
-- 清华： https://mirrors.tuna.tsinghua.edu.cn/help/pypi/
-- 中科大： https://pypi.mirrors.ustc.edu.cn/simple/
 - 阿里云： https://mirrors.aliyun.com/pypi/simple/
+- 豆瓣： https://pypi.doubanio.com/simple/
+- 中科大： https://pypi.mirrors.ustc.edu.cn/simple/
+- 清华： https://mirrors.tuna.tsinghua.edu.cn/help/pypi/
 
 ### 0.2 修改方式
 
@@ -76,6 +76,16 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 TCP协议处于传输层。
 
 HTTP协议处于应用层。
+
+**HTTP状态码（响应代码）**
+
+| 状态码 | 意义 |
+| :------------: | :-------------: |
+| 1xx | 信息响应 |
+| 2xx | 成功响应 |
+| 3xx | 重定向 |
+| 4xx | 客户端响应 |
+| 5xx | 服务器响应 |
 
 **网页的两种请求方式**
 
