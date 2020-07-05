@@ -29,30 +29,40 @@ class MaoyanmovieSpider(scrapy.Spider):
     def parse(self, response):
         # 打印网页的url
         print(f'url: {response.url}')
-        # 打印网页的内容
-        print('------------------------------------------')
-        print(response.text)
+        # # 打印网页的内容
+        # print('------------------------------------------')
+        # print(response.text)
         movies = Selector(response=response).xpath('.//div[@class="channel-detail movie-item-title"]')
+        i = 0
+        # 获取前十的电影link
         for movie in movies:
-            # 在items.py定义
-            item = SpidersItem()
-            link = movie.xpath('./a/@href')
-            title = movie.xpath('./a/text()')
-            print('---------------------------')
-            print(link)
-            print(title)
-            print('---------------------------')
-            print('https://maoyan.com' + link.extract_first())
-            print(title.extract_first())
-            link = 'https://maoyan.com' + link.extract_first()
-            item['title'] = title.extract_first()
-            yield scrapy.Request(url=link, meta={'item': item}, callback=self.parse2)
+            if i < 10:
+                # 在items.py定义
+                item = SpidersItem()
+                link = 'https://maoyan.com' + movie.xpath('./a/@href').extract_first()
+                title = movie.xpath('./a/text()').extract_first()
+                print('---------------------------')
+                print(f'详情页: {link}')
+                item['title'] = title
+                print(f'电影名称: {title}')
+
+                i += 1
+                yield scrapy.Request(url=link, meta={'item': item}, callback=self.parse2)
 
     # 解析具体页面
     def parse2(self, response):
         item = response.meta['item']
-        # 遇访问限制，无法继续完成……
-        # item['genre'] = 
-        # item['date'] = 
+        infos = Selector(response=response).xpath('.//div[@class="movie-brief-container"]/ul')
+        genres = infos.xpath('./li[1]/a')
+        genre = '/'.join(
+            genre.xpath('./text()').extract_first().strip() for genre in genres
+            )
+        date = infos.xpath('./li[3]/text()').extract_first()[0:10]
+
+        print(f'电影类型: {genre}')
+        print(f'上映日期: {date}')
+        item['genre'] = genre
+        item['date'] = date
+
         yield item
 

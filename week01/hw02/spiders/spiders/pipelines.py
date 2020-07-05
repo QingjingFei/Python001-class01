@@ -15,7 +15,7 @@ class SpidersPipeline:
         title = item['title']
         genre = item['genre']
         date = item['date']
-        output = f'|{title}|\t|{genren}|\t|{date}|\n\n'
+        output = f'{title},{genre},{date}\n'
         with open('./movie2.txt', 'a+', encoding='utf-8') as article:
             article.write(output)
         return item
